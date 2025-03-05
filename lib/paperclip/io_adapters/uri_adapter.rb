@@ -44,7 +44,7 @@ module Paperclip
     end
 
     def download_content
-      open(@target)
+      URI.open(@target)
     end
 
     def copy_to_tempfile(src)
